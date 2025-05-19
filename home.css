@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    border: border-box;
+    font-family:sans-serif;
+  }
+
+  body{
+    background-color: #ECECEC;
+  }
+
+#header{
+    background-image: url(Images/header_bmw_img.jpg);
+    background-size: cover;
+    height: 70vh;
+    margin-top: -5vh;
+    width: 100%;
+    
+    
+} 
+ 
+.nav{
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    top: 0%;
+    height:8vh;
+    background-color: black;
+    width: 100%;
+
+
+}
+
+.nav_contents{
+    padding: 1vw;
+    margin: 2vh 2vh 2vh 1vh;
+    height: 2vh;
+    width: 35vw;
+    font-size: 1vw;
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+
+.nav_text{
+    font-size: 1vw;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav_text:hover{
+    color:red;
+    transition: color 0.4s ease-in-out;
+}
+
+#header_logo{
+   margin-left: 0.3vw;
+   margin-top: 0.3vh;
+    height: 7vh;
+    width: 11vw;
+}
+
+#nav_search{
+    margin-top: -1vh;
+    width: 7vw;
+    height: 3vh;
+    background-color: transparent;
+    border: 0.03rem solid white;
+    border-radius: 4rem;
+}
+
+#nav_search:focus{
+    margin-top: -1vh;
+    width: 7vw;
+    height: 3vh;
+    background-color: transparent;
+    border: 0.03rem solid white;
+    border-radius: 4rem;
+}
+
+#header_heading{
+    color: white;
+    margin-top: 12vh;
+    margin-left: 8vw;
+    font-size: 5vw;
+    animation: headingAnimation 2s ease-in-out 0s 1 normal ;
+}
+
+#header_heading_part2{
+    color: white;
+    margin-left: 8vw;
+    font-size: 4vw;
+    animation: headingAnimation 2s ease-in-out 0s 1 normal ;
+}
+
+@keyframes headingAnimation {
+    from{
+        transform: translateY(40px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+    
+}
+
+
+#txt_subscribe_email{
+    padding: 1vh;
+    height: 1vh;
+    width: 15vw;
+    background-color: transparent;
+    border: 0.02rem solid white;
+    border-radius: 2rem;
+    color: white;
+    border-radius: 2rem;
+    margin-left: 8vw;
+    margin-top: 3vh;
+    font-weight:100;
+    animation: SuscribeAnimation 2s ease-in-out -1s 1 normal ;
+}
+
+#btn_subscribe_email{
+    color: white;
+    background-color: red;
+    border: 0.02rem solid red;
+    border-radius: 2rem;
+    font-size: 2vh;
+    animation: SuscribeAnimation 2s ease-in-out -1s 1 normal ;
+}
+
+#btn_subscribe_email:hover{
+    color: gold;
+    background-color: rgb(185, 34, 34);
+    border: 0.02rem solid  rgb(77, 1, 1);
+    border-radius: 2rem;
+    font-size: 2.3vh;
+    
+}
+
+@keyframes SuscribeAnimation {
+    from{
+        transform: translateY(40px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+    
+}
+
+#center_text_div{
+    height: 15vh;
+    width: 35vw;
+    background-color: white;
+    margin-left: 33%;
+    margin-top: -4%;
+}
+
+#center_01{
+    height: 25vh;
+    width: 65vw;
+    margin: auto;
+}
+
+#txt_01{
+   font-size: 14vw;
+   color: gray;
+   opacity: 30.7%;
+   z-index: -2;
+   margin-left: 25vw;
+   
+}
+
+#text_over_01{
+    margin-top: -20vh;
+    z-index: -2;
+    font-size: 4vw;
+}
+
+#partsMenu{
+   
+    display: grid;
+    grid-template-columns: repeat(5,10fr);
+    max-width: 100%;
+    margin-top: 6vh;
+    height: 40vh;
+ 
+}
+
+.partMenu_option{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuLinks{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4vw;
+}
+
+.menuLinks:hover{
+    color: red;
+    text-decoration: none;
+    transition: color 0.5s ease-in;
+}
+
+#ad_car_div{
+    height: 80vh;
+    background-image: url(Images/audi_car.png);
+    background-size: cover;
+}
+
+#ad_car_div_header{
+color: white;
+    width: 50vw;
+   position: relative;
+   left: 5vw;
+   top: -18vh;
+}
+
+#enkei_img{
+    width: 15vw;
+    height: 10vh;
+    position: relative;
+    top: -15vh;
+    left: 10vw;
+}
+
+.product_display{
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80vh;
+    width: 70%;
+    margin: auto;
+    margin-top: -18vh;
+}
+
+.products{
+    height: 50%;
+    width: 30%;
+    border-right:0.1vw solid gray ;
+    margin-top: 1vh;
+}
+
+.product_display:hover{
+    color:red;
+}
+
+.product_img{
+    height: 50%;
+    width: 100%;
+    margin: auto;
+    filter: drop-shadow(10px 15px 25px rgba(0, 0, 0, 0.6));
+  
+}
+.btnDiv{
+display: flex;
+justify-content: center;
+}
+.btns{
+    margin: 0.8vw;
+   background-color: red;
+   border: 0.2vh solid red;
+   box-shadow:2px 2px 2px grey;
+   border-radius: 0.4vw;
+   color: white;
+}
+
+.btns:hover{
+    color: gold;
+    border: 0.2vh solid gold;
+}
+
+.car_cards_container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 70vw;
+    margin: auto;
+    margin-top: -5vh;
+  }
+  
+  .cards_inner_wrapper {
+    display: flex;
+    width: 100vw; 
+  }
+  
+ 
+  .car_cards_container::-webkit-scrollbar {
+    height: 0vh; 
+  }
+  
+  .car_cards_container::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 10px;
+    width: 0.5vw;
+
+  }
+  
+  .car_cards_container::-webkit-scrollbar-track {
+    background-color: white;
+  }
+  
+  .car_cards {
+    height: 50vh;
+    width: 30%;
+    margin-right: 10px;
+  }
+
+  #card_slider{
+ margin-left: 45%;
+ font-size: 5vw;
+ margin-top: -8vh;
+  }
+
+  .carNews{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .NewsCard{
+    width: 25%;
+    min-height: 50%;
+    background-color: white;
+  }
+
+  .carNewImg{
+    width: 100%;
+    height: 100%;
+  }
+
+  .carNewsText{
+  padding: 1%;
+  width: 23%;
+  min-height: 50%;
+  background-color: white;
+  } 
+
+  .carNewsHeader{
+    font-size: 1.4vw;
+     margin-top: 5vh;
+      opacity: 85%;
+  }
+
+  .carNewsTime{
+    width: 90%; 
+    font-size: 1vw; 
+    opacity: 60%; 
+    margin-top: 1vh;
+  }
+
+  .carNewsDescription{
+    opacity: 70%; 
+    font-size: 1.4vw; 
+    margin-top: 4vh;
+    width: 90%;
+  }
+
+  #featuredBrands{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    min-height: 40vh;
+    margin: auto;
+  }
+
+  .brandsLogoDiv{
+    width: 25%;
+    height: 20vh;
+    background-color: white;
+  }
+
+  .brandLogo{
+    height: 100%;
+    width: 100%;
+  }
